@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VK Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<form action="" name="booking" class="form">
+    Выберите переговорную
+    <div class="selection">
+        <div class="label">Секция</div>
+        <select name="section" required>
+            <option value="" selected>Выберите здание</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+        </select>
+        <div class="label">Этаж</div>
+        <select name="floor" disabled></select>
+        <div class="label">Комната</div>
+        <select name="room" disabled></select>
+        <div class="label">Дата</div>
+        <input type="date" class="date" name="date" min="2023-05-10"required>
+        <div class="label">Время</div>
+        <input type="time" class="time" name="time" required>
+    </div>
+    <textarea placeholder="Оставьте комментарий" name="comments"></textarea>
+    <div class="buttons">
+        <input type="submit" value="Забронировать" class="button send">
+        <input type="reset" value="Очистить" name="clear" class="button clear">
+    </div>
+</form>
+<script src="js/script.js"></script>
+</body>
+</html>
